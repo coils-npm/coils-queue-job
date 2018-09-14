@@ -1,0 +1,15 @@
+{
+  "name": "coils-job",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "cd test && node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "coils-redis": "^1.0.1",
+    "require-directory": "^2.1.1"
+  }
+}
