@@ -1,5 +1,5 @@
 {
-  "name": "coils-job",
+  "name": "coils-queue-job",
   "version": "1.0.0",
   "main": "lib/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "coils-redis": "^1.0.1",
+    "coils-redis": "^1.0.3",
     "require-directory": "^2.1.1"
   }
 }

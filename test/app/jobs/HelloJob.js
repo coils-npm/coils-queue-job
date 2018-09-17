@@ -2,16 +2,21 @@ class HelloJob {
 	static get priority () {
 		return 'default' //default, allow [low, default, high]
 	}
-	static get retry () {
-		return 5 //default
+	static get totalTry () {
+		return 5 //default 10
+	}
+	
+	static tryInterval (currentTry) {
+		// default: currentTry * currentTry * currentTry * 10
+		// second
+		return 50
 	}
 
 	wait () {
 		return new Promise((resolve) => {
-			console.log('1-1')
 			setTimeout(() => {
 				resolve()
-			}, 6000)
+			}, 16000 * Math.random())
 		})
 	}
 
